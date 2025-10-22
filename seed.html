@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"/><title>Seed Firestore – Solar Affinity</title></head>
+<body>
+  <h1>Semilla de productos</h1>
+  <p>Completa firebaseConfig y haz click.</p>
+  <button id="seed">Cargar productos demo</button>
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js'
+    import { getFirestore, collection, addDoc } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js'
+    // ⚠️ Completa con TU CONFIG
+    const firebaseConfig = { apiKey:'REPLACE', authDomain:'REPLACE', projectId:'REPLACE' }
+    const app = initializeApp(firebaseConfig)
+    const db = getFirestore(app)
+    const products = [
+      { title:'Kit FV Híbrido 5 kW (Residencial)', category:'fotovoltaico', price:1990000, stock:8,
+        shortDesc:'Inversor 5kW híbrido + 6 paneles 550W + protecciones.',
+        longDesc:'Ideal para casas con consumo medio. Incluye tablero CC/CA y bases de montaje.',
+        thumb:'https://placehold.co/600x360?text=Kit+5kW' },
+      { title:'Kit FV Híbrido 7.5 kW (Residencial)', category:'fotovoltaico', price:2890000, stock:6,
+        shortDesc:'Inversor 7.5kW + 10 paneles 550W.',
+        longDesc:'Mayor potencia para hogares con alto consumo o ampliaciones futuras.',
+        thumb:'https://placehold.co/600x360?text=Kit+7.5kW' },
+      { title:'Kit FV Híbrido 10 kW (Residencial)', category:'fotovoltaico', price:3690000, stock:5,
+        shortDesc:'Inversor 10kW + 14 paneles 550W.',
+        longDesc:'Para consumos elevados. Compatible con bancos de baterías.',
+        thumb:'https://placehold.co/600x360?text=Kit+10kW' },
+      { title:'Mantención Preventiva FV', category:'mantencion', price:99000, stock:20,
+        shortDesc:'Limpieza de paneles y chequeo eléctrico.',
+        longDesc:'Incluye revisión de strings, aprietes, termografías básicas y reporte.',
+        thumb:'https://placehold.co/600x360?text=Mantencion+FV' },
+      { title:'Instalación Termosolar 200 L', category:'termosolar', price:890000, stock:4,
+        shortDesc:'Sistema termosolar con acumulación 200 L.',
+        longDesc:'Ahorro de gas y agua caliente estable para familia de 3–4 personas.',
+        thumb:'https://placehold.co/600x360?text=Termosolar+200L' }
+    ]
+    document.getElementById('seed').onclick = async () => {
+      for (const p of products) await addDoc(collection(db,'products'), p)
+      alert('Productos cargados')
+    }
+  </script>
+</body>
+</html>
