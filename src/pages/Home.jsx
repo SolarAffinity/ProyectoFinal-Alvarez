@@ -76,10 +76,10 @@ export default function Home(){
         }}
       >
         <h1 style={{fontSize: '2.4rem', lineHeight: 1.1, margin: 0, marginBottom: '1rem', color: '#F7C600'}}>
-          Instalaciones solares residenciales
+          Servicios Fotovoltáicos y Termosolares
         </h1>
         <p style={{marginBottom: '1.6rem'}}>
-          Fotovoltaico (5–10 kW híbridos), termosolar y mantenciones. En Santiago y alrededores.
+          Servicios de Instalaciónes y Mantenimientos de Sistemas Fotovoltáicos y Termosolares. En Santiago y alrededores.
         </p>
 
         <div style={{display:'flex', gap:'.8rem', flexWrap:'wrap', justifyContent:'center', marginBottom: '1rem'}}>
@@ -161,19 +161,6 @@ export default function Home(){
             ▶
           </button>
         </div>
-
-        {/* Imagen decorativa opcional bajo el contenido */}
-        <img
-          src="/img/solar-home-mini.jpg"
-          alt="Instalación solar en techo residencial"
-          style={{
-            width: '100%',
-            maxWidth: 520,
-            borderRadius: '1rem',
-            marginTop: '1.2rem',
-            boxShadow: '0 6px 18px rgba(0,0,0,0.35)'
-          }}
-        />
       </div>
 
       {/* Degradado sutil en la parte inferior para legibilidad */}
