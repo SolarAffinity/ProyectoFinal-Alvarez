@@ -1,19 +1,36 @@
-import { useParams } from 'react-router-dom'
-import ItemList from './ItemList'
-import { useProducts } from '../hooks/useProducts'
+import { useEffect, useState } from 'react'
+import { fetchProducts } from '../services/products'
 
-export default function ItemListContainer(){
-  const { categoryId } = useParams()
-  const { data, loading, error } = useProducts(categoryId)
+export default function ItemListContainer({ categoryId }) {
+  const [items, setItems] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
 
-  if(loading) return <div className="container"><p>Cargando productos...</p></div>
-  if(error) return <div className="container"><p>Hubo un problema al cargar los productos.</p></div>
-  if(!data.length) return <div className="container"><p>No hay productos disponibles.</p></div>
+  useEffect(() => {
+    let alive = true
+    setLoading(true)
+    setError(null)
+
+    fetchProducts(categoryId)
+      .then(data => { if (alive) setItems(data) })
+      .catch(err => { if (alive) setError(err?.message || 'Error cargando productos') })
+      .finally(() => { if (alive) setLoading(false) })
+
+    return () => { alive = false }
+  }, [categoryId])
+
+  if (loading) return <p>Cargando productos…</p>
+  if (error)   return <p style={{color:'crimson'}}>Error: {error}</p>
+  if (!items.length) return <p>No hay productos para mostrar.</p>
 
   return (
-    <div className="container">
-      <h2>Catálogo {categoryId ? `— ${categoryId}` : ''}</h2>
-      <ItemList items={data} />
-    </div>
+    <ul>
+      {items.map(p => (
+        <li key={p.id}>
+          {p.title} — ${p.price?.toLocaleString?.('es-CL') ?? p.price}
+        </li>
+      ))}
+    </ul>
   )
 }
+
