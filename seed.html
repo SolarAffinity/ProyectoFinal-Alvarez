@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="es">
-<head><meta charset="utf-8"/><title>Seed Firestore – Solar Affinity</title></head>
+<head><meta charset="utf-8"/><title>Servicios – Solar Affinity</title></head>
 <body>
-  <h1>Semilla de productos</h1>
+  <h1>Servicios</h1>
   <p>Completa firebaseConfig y haz click.</p>
-  <button id="seed">Cargar productos demo</button>
+  <button id="seed">Cargando productos...</button>
   <script type="module">
     import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js'
-    import { getFirestore, collection, addDoc } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js'
-    // ⚠️ Completa con TU CONFIG
-    const firebaseConfig = { apiKey:'REPLACE', authDomain:'REPLACE', projectId:'REPLACE' }
+    import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.14.1/firebase-analytics.js'
+    // ⚠️ Completa con los datos de Firebase
+    const firebaseConfig = { apiKey:"AIzaSyBmzTNmVJLhHsd_YV9GYmuSa1h_-Sj9F1Q", authDomain:"proyectofinalalvarez.firebaseapp.com", projectId:"proyectofinalalvarez" }
     const app = initializeApp(firebaseConfig)
-    const db = getFirestore(app)
+    const analytics = getAnalytics(app)
     const products = [
       { title:'Kit FV Híbrido 5 kW (Residencial)', category:'fotovoltaico', price:1990000, stock:8,
         shortDesc:'Inversor 5kW híbrido + 6 paneles 550W + protecciones.',
