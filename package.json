@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "CI=false npx vite build",
-    "preview": "vite preview --port 4173"
+    "build": "set CI=false npx vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
