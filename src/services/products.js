@@ -1,4 +1,4 @@
-import { collection, getDocs, getDoc, doc, query, where, limit } from 'firebase/analytics'
+import { collection, getDocs, getDoc, doc, query, where, limit } from 'firebase/firestore'
 import { db } from '../firebase.config'
 
 export async function fetchProducts(categoryId){
