@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "CI=false npx vite build",
+    "preview": "vite preview --port 4173"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -18,6 +18,9 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
-    "vite": "^5.4.10"
+    "vite": "^5.4.21"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
