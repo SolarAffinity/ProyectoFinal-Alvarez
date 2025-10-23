@@ -34,3 +34,6 @@ const firebaseConfig = {
 
 export const app = initializeApp(firebaseConfig)
 export const db = getFirestore(app)
+
+// DEBUG SOLO TEMPORAL
+console.log('[Firebase][projectId]', import.meta.env.VITE_FIREBASE_PROJECT_ID)
