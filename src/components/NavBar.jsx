@@ -6,7 +6,7 @@ export default function NavBar(){
     <nav className="nav">
       <div className="nav-inner container">
         <Link to="/" className="brand">
-          <img src="/logo.svg" alt="Solar Affinity" /> <span>Solar Affinity</span>
+          <img src="public/logo.svg" alt="Solar Affinity" /> <span>Solar Affinity</span>
         </Link>
         <div className="menu">
           <NavLink to="/" className={({isActive})=>isActive? 'active':''}>Inicio</NavLink>
