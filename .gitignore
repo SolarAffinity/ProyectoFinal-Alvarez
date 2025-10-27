@@ -1,0 +1,13 @@
+# Dependencias
+node_modules/
+
+# Archivos de entorno
+.env
+frontend/.env
+mp-backend/.env
+
+# Archivos temporales
+dist/
+.vscode/
+.DS_Store
+npm-debug.log

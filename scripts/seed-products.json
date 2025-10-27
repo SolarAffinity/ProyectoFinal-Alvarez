@@ -1,0 +1,210 @@
+[
+  {
+    "id": "pv-450",
+    "title": "Panel Solar 450W",
+    "description": "Módulo monocristalino de alta eficiencia",
+    "code": "PV-450",
+    "price": 149990,
+    "status": true,
+    "stock": 25,
+    "category": "fotovoltaico",
+    "thumbnails": [
+      "/assets/placeholder.jpg"
+    ]
+  },
+  {
+    "id": "pv-550",
+    "title": "Panel Solar 550W",
+    "description": "Mayor potencia para techos residenciales",
+    "code": "PV-550",
+    "price": 189990,
+    "status": true,
+    "stock": 10,
+    "category": "fotovoltaico",
+    "thumbnails": [
+      "/assets/placeholder.jpg"
+    ]
+  },
+  {
+    "id": "inv-5k",
+    "title": "Inversor 5kW On‑grid",
+    "description": "Con WiFi y monitoreo en app",
+    "code": "INV-5K",
+    "price": 399990,
+    "status": true,
+    "stock": 12,
+    "category": "fotovoltaico",
+    "thumbnails": [
+      "/assets/placeholder.jpg"
+    ]
+  },
+  {
+    "id": "inv-3k",
+    "title": "Inversor 3kW On‑grid",
+    "description": "Apto para casas pequeñas",
+    "code": "INV-3K",
+    "price": 299990,
+    "status": true,
+    "stock": 8,
+    "category": "fotovoltaico",
+    "thumbnails": [
+      "/assets/placeholder.jpg"
+    ]
+  },
+  {
+    "id": "kit-2kw",
+    "title": "Kit FV 2kW Residencial",
+    "description": "Incluye paneles, inversor y estructura",
+    "code": "KIT-2KW",
+    "price": 799990,
+    "status": true,
+    "stock": 5,
+    "category": "fotovoltaico",
+    "thumbnails": [
+      "/assets/placeholder.jpg"
+    ]
+  },
+  {
+    "id": "kit-5kw",
+    "title": "Kit FV 5kW Residencial",
+    "description": "Solución completa para consumos medios",
+    "code": "KIT-5KW",
+    "price": 1499990,
+    "status": true,
+    "stock": 7,
+    "category": "fotovoltaico",
+    "thumbnails": [
+      "/assets/placeholder.jpg"
+    ]
+  },
+  {
+    "id": "bat-5kwh",
+    "title": "Batería Litio 5kWh",
+    "description": "Almacenamiento para respaldo",
+    "code": "BAT-5KWH",
+    "price": 999990,
+    "status": true,
+    "stock": 6,
+    "category": "fotovoltaico",
+    "thumbnails": [
+      "/assets/placeholder.jpg"
+    ]
+  },
+  {
+    "id": "bat-10kwh",
+    "title": "Batería Litio 10kWh",
+    "description": "Para mayores autonomías",
+    "code": "BAT-10KWH",
+    "price": 1899990,
+    "status": true,
+    "stock": 3,
+    "category": "fotovoltaico",
+    "thumbnails": [
+      "/assets/placeholder.jpg"
+    ]
+  },
+  {
+    "id": "ts-200l",
+    "title": "Termosolar 200L",
+    "description": "Calefón termosolar para 3‑4 personas",
+    "code": "TS-200",
+    "price": 499990,
+    "status": true,
+    "stock": 9,
+    "category": "termosolar",
+    "thumbnails": [
+      "/assets/placeholder.jpg"
+    ]
+  },
+  {
+    "id": "ts-300l",
+    "title": "Termosolar 300L",
+    "description": "Mayor capacidad para familias grandes",
+    "code": "TS-300",
+    "price": 649990,
+    "status": true,
+    "stock": 4,
+    "category": "termosolar",
+    "thumbnails": [
+      "/assets/placeholder.jpg"
+    ]
+  },
+  {
+    "id": "ts-kit",
+    "title": "Kit Termosolar Residencial",
+    "description": "Incluye estanque, estructura y tuberías",
+    "code": "TS-KIT",
+    "price": 799990,
+    "status": true,
+    "stock": 6,
+    "category": "termosolar",
+    "thumbnails": [
+      "/assets/placeholder.jpg"
+    ]
+  },
+  {
+    "id": "srv-mant-fv",
+    "title": "Mantención Fotovoltaica",
+    "description": "Limpieza de paneles y revisión eléctrica",
+    "code": "SRV-MANT-FV",
+    "price": 59990,
+    "status": true,
+    "stock": 99,
+    "category": "fotovoltaico",
+    "thumbnails": [
+      "/assets/placeholder.jpg"
+    ]
+  },
+  {
+    "id": "srv-mant-ts",
+    "title": "Mantención Termosolar",
+    "description": "Chequeo de estanque y aislación",
+    "code": "SRV-MANT-TS",
+    "price": 69990,
+    "status": true,
+    "stock": 99,
+    "category": "termosolar",
+    "thumbnails": [
+      "/assets/placeholder.jpg"
+    ]
+  },
+  {
+    "id": "srv-visita",
+    "title": "Visita Técnica (Reserva)",
+    "description": "Reserva técnica para evaluación en sitio",
+    "code": "SRV-RES-TEC",
+    "price": 19990,
+    "status": true,
+    "stock": 999,
+    "category": "fotovoltaico",
+    "thumbnails": [
+      "/assets/placeholder.jpg"
+    ]
+  },
+  {
+    "id": "acc-cables",
+    "title": "Cables Solares 4mm² (10m)",
+    "description": "UV‑resistentes, par rojo/negro",
+    "code": "ACC-CABLE",
+    "price": 19990,
+    "status": true,
+    "stock": 30,
+    "category": "fotovoltaico",
+    "thumbnails": [
+      "/assets/placeholder.jpg"
+    ]
+  },
+  {
+    "id": "acc-conect",
+    "title": "Conectores MC4 (par)",
+    "description": "Compatibles estándar",
+    "code": "ACC-MC4",
+    "price": 9990,
+    "status": true,
+    "stock": 50,
+    "category": "fotovoltaico",
+    "thumbnails": [
+      "/assets/placeholder.jpg"
+    ]
+  }
+]
